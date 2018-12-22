@@ -31,6 +31,8 @@ public class PlayBackQue extends BroadcastReceiver implements PlayBackQueListene
     private boolean phoneInUse;
     CarnotificationListener carnotificationListener;
 
+    public PlayBackQue() {}
+
     public PlayBackQue(CarnotificationListener carnotificationListener) {
         this.carnotificationListener=carnotificationListener;
         messages= new TreeMapCalllback<>(this);
@@ -62,7 +64,7 @@ public class PlayBackQue extends BroadcastReceiver implements PlayBackQueListene
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        if (intent.getAction().equalsIgnoreCase("android.app.action.ENTER_CAR_MODE"))
+        if (intent.getAction()!=null && intent.getAction().equalsIgnoreCase("android.app.action.ENTER_CAR_MODE"))
         {
             Log.d("CarNotif","Enterng car mode");
             carnotificationListener.soundPlayer=new CarNotificationSoundPlayer(context.getApplicationContext(),this);
@@ -239,6 +241,7 @@ public class PlayBackQue extends BroadcastReceiver implements PlayBackQueListene
             else
             {
                 AudioManager audioManager=(AudioManager) appContext.getSystemService(Context.AUDIO_SERVICE);
+                if (audioManager!=null)
                 ret=audioManager.requestAudioFocus(null,AudioManager.STREAM_NOTIFICATION,AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
             }
         } catch (CarNotConnectedException e) {
