@@ -7,8 +7,8 @@ android {
         applicationId "uk.co.emil.borconi.carnotifier"
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 8
-        versionName "1.0 Beta v7"
+        versionCode 9
+        versionName "1.0 Beta v8"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -16,6 +16,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
     }
 }
 

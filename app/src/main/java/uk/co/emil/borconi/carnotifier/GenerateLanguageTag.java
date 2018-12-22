@@ -14,7 +14,7 @@ import java.util.Locale;
 import java.util.Map;
 
 public class GenerateLanguageTag {
-   
+
 
     @NonNull
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
