@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">IS</string>
+<string name="replyQuestion">Viltu svara?</string>
+<string name="sendOrChange">Viltu senda það eða breyta því?</string>
+<string name="notUnderstand">Ég skil ekki.</string>
+<string name="yesorno">Þú getur sagt: já eða nei.</string>
+<string name="scc">Þú getur sagt: senda, breyta eða hætta við.</string>
+<string name="longmessage">Langur skilaboð móttekin, viltu lesa það?</string>
+<string name="yes">Já</string>
+<string name="no">nr</string>
+<string name="send">senda</string>
+<string name="change">breyting</string>
+<string name="cancel">hætta við</string>
+<string name="whatsthemessage">Hvað er skilaboðin?</string>
+<string name="gotit">Fékk það, hér er skilaboðin þín</string>
+<string name="aborting">Því miður skil ég ekki, afsalað</string>
+<string name="sent">Skilaboð send</string>
+</resources>

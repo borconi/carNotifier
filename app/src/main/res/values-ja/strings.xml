@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">JP</string>
+<string name="replyQuestion">返信しますか？</string>
+<string name="sendOrChange">それを送ったり変更したりしたいですか？</string>
+<string name="notUnderstand">私は理解していませんでした。</string>
+<string name="yesorno">あなたは言うことができます：はいまたはいいえ。</string>
+<string name="scc">送信、変更、キャンセルを言うことができます。</string>
+<string name="longmessage">長いメッセージが受信されました。あなたはそれを読んでいますか？</string>
+<string name="yes">はい</string>
+<string name="no">いいえ</string>
+<string name="send">送信</string>
+<string name="change">変化する</string>
+<string name="cancel">キャンセル</string>
+<string name="whatsthemessage">メッセージは何ですか？</string>
+<string name="gotit">それを得ました、あなたのメッセージはここにあります：</string>
+<string name="aborting">申し訳ありませんが理解していない、中止</string>
+<string name="sent">送信されたメッセージ</string>
+</resources>

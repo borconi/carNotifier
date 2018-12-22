@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">AX</string>
+<string name="replyQuestion">Vill du svara?</string>
+<string name="sendOrChange">Vill du skicka den eller ändra den?</string>
+<string name="notUnderstand">Jag förstod inte.</string>
+<string name="yesorno">Du kan säga: ja eller nej.</string>
+<string name="scc">Du kan säga: skicka, ändra eller avbryt.</string>
+<string name="longmessage">Långt meddelande mottaget, Vill du läsa det?</string>
+<string name="yes">Ja</string>
+<string name="no">nej</string>
+<string name="send">skicka</string>
+<string name="change">Byta</string>
+<string name="cancel">annullera</string>
+<string name="whatsthemessage">Vad är meddelandet?</string>
+<string name="gotit">Fick det, här är ditt meddelande</string>
+<string name="aborting">Ledsen jag förstår inte, avbryter</string>
+<string name="sent">Meddelande skickat</string>
+</resources>

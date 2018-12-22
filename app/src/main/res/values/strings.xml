@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CarNotifier</string>
+    <string name="perm_req">Notification access required</string>
+    <string name="perm_desc">The app needs to have read access to the notifications in order to display them in Android Auto</string>
+    <string name="ignore">Ignore</string>
+    <string name="demo_title">DEMO</string>
+    <string name="settings">Settings</string>
+    <string name="autoread">Read out notification</string>
+    <string name="dismisoriginal">Dismiss original notification</string>
+    <string name="clearown">Seconds before removing newly generated notification:</string>
+    <string name="playsound">Play notification sound</string>
+
+    <string name="countryCode">GB</string>
+    <string name="replyQuestion">Do you want to reply?</string>
+    <string name="sendOrChange">Do you want to send it or change it?</string>
+    <string name="notUnderstand">I didn\'t understand.</string>
+    <string name="yesorno">You can say: yes or no.</string>
+    <string name="scc">You can say: send, change or cancel.</string>
+    <string name="longmessage">Long message received, Do you want to read it?</string>
+    <string name="yes">Yes</string>
+    <string name="no">no</string>
+    <string name="send">send</string>
+    <string name="change">change</string>
+    <string name="cancel">cancel</string>
+    <string name="whatsthemessage">What\'s the message?</string>
+    <string name="gotit">Got it, here is your message</string>
+    <string name="aborting">Sorry I don\'t understand, aborting</string>
+    <string name="sent">Message sent</string>
+</resources>

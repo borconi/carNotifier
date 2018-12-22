@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">BG</string>
+<string name="replyQuestion">Искате ли да отговорите?</string>
+<string name="sendOrChange">Искате ли да го изпратите или да го промените?</string>
+<string name="notUnderstand">Не разбирах.</string>
+<string name="yesorno">Можете да кажете: да или не.</string>
+<string name="scc">Можете да кажете: изпращане, промяна или анулиране.</string>
+<string name="longmessage">Получено дълго съобщение, Искате ли да го прочетете?</string>
+<string name="yes">да</string>
+<string name="no">не</string>
+<string name="send">изпращам</string>
+<string name="change">промяна</string>
+<string name="cancel">анулира</string>
+<string name="whatsthemessage">Какво е посланието?</string>
+<string name="gotit">Разбрах, ето вашето послание</string>
+<string name="aborting">Съжалявам, че не разбирам, абориране</string>
+<string name="sent">Съобщението е изпратено</string>
+</resources>

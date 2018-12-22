@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">AE</string>
+<string name="replyQuestion">هل تريد الرد؟</string>
+<string name="sendOrChange">هل تريد إرسالها أو تغييرها؟</string>
+<string name="notUnderstand">لم افهم</string>
+<string name="yesorno">يمكنك أن تقول: نعم أو لا.</string>
+<string name="scc">يمكنك أن تقول: الإرسال أو التغيير أو الإلغاء.</string>
+<string name="longmessage">تلقيت رسالة طويلة ، هل تريد قراءتها؟</string>
+<string name="yes">نعم فعلا</string>
+<string name="no">لا</string>
+<string name="send">إرسال</string>
+<string name="change">يتغيرون</string>
+<string name="cancel">إلغاء</string>
+<string name="whatsthemessage">ما هي الرسالة؟</string>
+<string name="gotit">حسنًا ، إليك رسالتك</string>
+<string name="aborting">آسف ، أنا لا أفهم ، أجهض</string>
+<string name="sent">تم الارسال</string>
+</resources>

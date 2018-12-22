@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">EE</string>
+<string name="replyQuestion">Kas soovite vastata?</string>
+<string name="sendOrChange">Kas soovite seda saata või muuta?</string>
+<string name="notUnderstand">Ma ei saanud aru.</string>
+<string name="yesorno">Võite öelda: jah või ei.</string>
+<string name="scc">Võite öelda: saata, muuta või tühistada.</string>
+<string name="longmessage">Pikk sõnum sai kätte, kas soovite seda lugeda?</string>
+<string name="yes">jah</string>
+<string name="no">ei</string>
+<string name="send">saada</string>
+<string name="change">muutus</string>
+<string name="cancel">tühistada</string>
+<string name="whatsthemessage">Mis on sõnum?</string>
+<string name="gotit">Said, siin on sinu sõnum</string>
+<string name="aborting">Vabandust, ma ei saa aru, katkestades</string>
+<string name="sent">Sõnum saadetud</string>
+</resources>

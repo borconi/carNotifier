@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">BQ</string>
+<string name="replyQuestion">Wil je antwoorden?</string>
+<string name="sendOrChange">Wil je het verzenden of wijzigen?</string>
+<string name="notUnderstand">Ik begreep het niet.</string>
+<string name="yesorno">Je kunt zeggen: ja of nee.</string>
+<string name="scc">U kunt zeggen: verzenden, wijzigen of annuleren.</string>
+<string name="longmessage">Lang bericht ontvangen, wil je het lezen?</string>
+<string name="yes">Ja</string>
+<string name="no">nee</string>
+<string name="send">sturen</string>
+<string name="change">verandering</string>
+<string name="cancel">annuleren</string>
+<string name="whatsthemessage">Wat is het bericht?</string>
+<string name="gotit">Heb je het, hier is je bericht</string>
+<string name="aborting">Sorry ik begrijp het niet, abortus</string>
+<string name="sent">Bericht verzonden</string>
+</resources>

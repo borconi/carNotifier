@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">IN</string>
+<string name="replyQuestion">શું તમે જવાબ આપવા માંગો છો?</string>
+<string name="sendOrChange">શું તમે તેને મોકલવા અથવા બદલવા માંગો છો?</string>
+<string name="notUnderstand">મને સમજાતું નથી.</string>
+<string name="yesorno">તમે કહી શકો છો: હા અથવા ના.</string>
+<string name="scc">તમે કહી શકો છો: મોકલો, બદલો અથવા રદ કરો.</string>
+<string name="longmessage">લાંબો સંદેશ પ્રાપ્ત થયો, શું તમે તેને વાંચવા માંગો છો?</string>
+<string name="yes">હા</string>
+<string name="no">ના</string>
+<string name="send">મોકલો</string>
+<string name="change">બદલો</string>
+<string name="cancel">રદ કરો</string>
+<string name="whatsthemessage">સંદેશ શું છે?</string>
+<string name="gotit">સમજાઈ ગયું, તમારો સંદેશ અહીં છે</string>
+<string name="aborting">માફ કરશો હું સમજી શકતો નથી, અવગણવું</string>
+<string name="sent">સંદેશ મોકલ્યો</string>
+</resources>

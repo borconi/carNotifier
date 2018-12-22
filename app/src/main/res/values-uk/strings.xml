@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">UA</string>
+<string name="replyQuestion">Ви хочете відповісти?</string>
+<string name="sendOrChange">Ви хочете відправити його або змінити його?</string>
+<string name="notUnderstand">Я не зрозумів</string>
+<string name="yesorno">Ви можете сказати: так чи ні.</string>
+<string name="scc">Ви можете сказати: відправити, змінити або скасувати.</string>
+<string name="longmessage">Довге повідомлення отримане, Ви хочете його прочитати?</string>
+<string name="yes">Так</string>
+<string name="no">ні</string>
+<string name="send">відправити</string>
+<string name="change">змінити</string>
+<string name="cancel">скасувати</string>
+<string name="whatsthemessage">Що таке повідомлення?</string>
+<string name="gotit">Отримано, ось ваше повідомлення</string>
+<string name="aborting">Вибач, я не розумію, перериваю</string>
+<string name="sent">Повідомлення надіслано</string>
+</resources>

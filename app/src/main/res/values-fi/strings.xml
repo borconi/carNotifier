@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">FI</string>
+<string name="replyQuestion">Haluatko vastata?</string>
+<string name="sendOrChange">Haluatko lähettää sen vai muuttaa sitä?</string>
+<string name="notUnderstand">En ymmärrä.</string>
+<string name="yesorno">Voit sanoa: kyllä ​​vai ei.</string>
+<string name="scc">Voit sanoa: lähettää, muuttaa tai peruuttaa.</string>
+<string name="longmessage">Pitkä viesti vastaanotettu, Haluatko lukea sen?</string>
+<string name="yes">Joo</string>
+<string name="no">ei</string>
+<string name="send">lähettää</string>
+<string name="change">muuttaa</string>
+<string name="cancel">peruuttaa</string>
+<string name="whatsthemessage">Mikä viesti on?</string>
+<string name="gotit">Saan sen, tässä on viesti</string>
+<string name="aborting">Anteeksi, etten ymmärrä, keskeytyin</string>
+<string name="sent">Viesti lähetetty</string>
+</resources>

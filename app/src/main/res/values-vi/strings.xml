@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">VN</string>
+<string name="replyQuestion">Bạn có muốn trả lời không?</string>
+<string name="sendOrChange">Bạn có muốn gửi hoặc thay đổi nó không?</string>
+<string name="notUnderstand">Tôi không hiểu.</string>
+<string name="yesorno">Bạn có thể nói: có hoặc không.</string>
+<string name="scc">Bạn có thể nói: gửi, thay đổi hoặc hủy.</string>
+<string name="longmessage">Đã nhận được tin nhắn dài, Bạn có muốn đọc nó không?</string>
+<string name="yes">vâng</string>
+<string name="no">không</string>
+<string name="send">gửi</string>
+<string name="change">thay đổi</string>
+<string name="cancel">hủy bỏ</string>
+<string name="whatsthemessage">Tin nhắn là gì?</string>
+<string name="gotit">OK, đây là tin nhắn của bạn</string>
+<string name="aborting">Xin lỗi tôi không hiểu, hủy bỏ</string>
+<string name="sent">Đã gửi tin nhắn</string>
+</resources>

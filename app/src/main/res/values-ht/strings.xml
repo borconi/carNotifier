@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">HT</string>
+<string name="replyQuestion">Ou vle reponn?</string>
+<string name="sendOrChange">Ou vle voye li oswa chanje li?</string>
+<string name="notUnderstand">Mwen pa t \'konprann.</string>
+<string name="yesorno">Ou ka di: wi oswa non.</string>
+<string name="scc">Ou ka di: voye, chanje oswa anile.</string>
+<string name="longmessage">Long mesaj ou te resevwa, ou vle li li?</string>
+<string name="yes">wi</string>
+<string name="no">non</string>
+<string name="send">voye</string>
+<string name="change">chanjman</string>
+<string name="cancel">anile</string>
+<string name="whatsthemessage">Ki sa ki nan mesaj la?</string>
+<string name="gotit">Got li, isit la se mesaj ou a</string>
+<string name="aborting">M regrèt mwen pa konprann, avòtman</string>
+<string name="sent">Mesaj te voye</string>
+</resources>

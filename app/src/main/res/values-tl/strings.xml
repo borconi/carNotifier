@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">PH</string>
+<string name="replyQuestion">Gusto mo bang tumugon?</string>
+<string name="sendOrChange">Gusto mo bang ipadala ito o baguhin ito?</string>
+<string name="notUnderstand">Hindi ko naintindihan.</string>
+<string name="yesorno">Maaari mong sabihin: oo o hindi.</string>
+<string name="scc">Maaari mong sabihin: magpadala, palitan o kanselahin.</string>
+<string name="longmessage">Matagal nang natanggap ang mensahe, Gusto mo bang basahin ito?</string>
+<string name="yes">Oo</string>
+<string name="no">hindi</string>
+<string name="send">ipadala</string>
+<string name="change">pagbabago</string>
+<string name="cancel">kanselahin</string>
+<string name="whatsthemessage">Ano ang mensahe?</string>
+<string name="gotit">Nakuha mo ito, narito ang iyong mensahe</string>
+<string name="aborting">Paumanhin hindi ko maintindihan, aborting</string>
+<string name="sent">Ipinadala ang mensahe</string>
+</resources>

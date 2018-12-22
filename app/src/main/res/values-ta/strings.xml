@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">LK</string>
+<string name="replyQuestion">பதில் சொல்ல விரும்புகிறீர்களா?</string>
+<string name="sendOrChange">நீங்கள் அனுப்ப வேண்டுமா அல்லது மாற்ற வேண்டுமா?</string>
+<string name="notUnderstand">எனக்கு புரியவில்லை.</string>
+<string name="yesorno">நீங்கள் சொல்லலாம்: ஆம் அல்லது இல்லை.</string>
+<string name="scc">நீங்கள் சொல்லலாம்: அனுப்பவும், மாற்றவும் அல்லது ரத்து செய்யவும்.</string>
+<string name="longmessage">நீண்ட செய்தி கிடைத்தது, நீங்கள் அதை படிக்க வேண்டுமா?</string>
+<string name="yes">ஆம்</string>
+<string name="no">இல்லை</string>
+<string name="send">அனுப்புக</string>
+<string name="change">மாற்றம்</string>
+<string name="cancel">ரத்து</string>
+<string name="whatsthemessage">செய்தி என்ன?</string>
+<string name="gotit">அது கிடைத்தது, இங்கே உங்கள் செய்தி</string>
+<string name="aborting">மன்னிக்கவும், புரிந்துகொள்ள முடியவில்லை</string>
+<string name="sent">செய்தி அனுப்பப்பட்டது</string>
+</resources>

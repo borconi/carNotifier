@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">GB</string>
+<string name="replyQuestion">Ar mhaith leat freagra a thabhairt?</string>
+<string name="sendOrChange">Ar mhaith leat é a sheoladh nó a athrú?</string>
+<string name="notUnderstand">Níor thuig mé.</string>
+<string name="yesorno">Is féidir leat a rá: yes nó no.</string>
+<string name="scc">Is féidir leat a rá: seol, athrú nó cealú.</string>
+<string name="longmessage">Teachtaireacht fhada a fuarthas, An bhfuil tú ag iarraidh é a léamh?</string>
+<string name="yes">tá</string>
+<string name="no">uimh</string>
+<string name="send">seol</string>
+<string name="change">athrú</string>
+<string name="cancel">cealú</string>
+<string name="whatsthemessage">Cad é an teachtaireacht?</string>
+<string name="gotit">Fuair ​​sé, tá do theachtaireacht anseo</string>
+<string name="aborting">Tá brón orm nach dtuigeann mé, ag maireachtáil</string>
+<string name="sent">Teachtaireacht a seoladh</string>
+</resources>

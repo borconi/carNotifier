@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">AD</string>
+<string name="replyQuestion">Voleu respondre?</string>
+<string name="sendOrChange">Vols enviar-lo o canviar-lo?</string>
+<string name="notUnderstand">No ho vaig comprendre.</string>
+<string name="yesorno">Vostè pot dir: sí o no.</string>
+<string name="scc">Vostè pot dir: enviar, canviar o cancel·lar.</string>
+<string name="longmessage">Missatge llarg rebut, Voleu llegir-lo?</string>
+<string name="yes">sí</string>
+<string name="no">no</string>
+<string name="send">enviar</string>
+<string name="change">canviar</string>
+<string name="cancel">cancel · lar</string>
+<string name="whatsthemessage">Quin és el missatge?</string>
+<string name="gotit">Ho teniu, aquest és el vostre missatge</string>
+<string name="aborting">Ho sento, no ho entenc, avortant</string>
+<string name="sent">Missatge enviat</string>
+</resources>

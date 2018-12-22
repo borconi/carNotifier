@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">NP</string>
+<string name="replyQuestion">के तपाईँ जवाफ दिन चाहानुहुन्छ?</string>
+<string name="sendOrChange">के तपाइँ यसलाई पठाउन वा परिवर्तन गर्न चाहनुहुन्छ?</string>
+<string name="notUnderstand">मैले बुझिनँ।</string>
+<string name="yesorno">तपाईं भन्न सक्नुहुन्छ: हाँ वा होइन।</string>
+<string name="scc">तपाईं भन्न सक्नुहुन्छ: पठाउनुहोस्, परिवर्तन वा रद्द गर्नुहोस्।</string>
+<string name="longmessage">लामो सन्देश प्राप्त भयो, के तपाईं यसलाई पढ्न चाहनुहुन्छ?</string>
+<string name="yes">हो</string>
+<string name="no">होइन</string>
+<string name="send">पठाउनुहोस्</string>
+<string name="change">परिवर्तन</string>
+<string name="cancel">रद्द गर्नुहोस्</string>
+<string name="whatsthemessage">सन्देश के हो?</string>
+<string name="gotit">मिल्यो, तपाईको सन्देश यहाँ छ</string>
+<string name="aborting">माफ गर्नुहोस् म बुझ्दछु, रद्द गरिरहेको छु</string>
+<string name="sent">सन्देश पठाइयो</string>
+</resources>

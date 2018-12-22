@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">ES</string>
+<string name="replyQuestion">Erantzun nahi al duzu?</string>
+<string name="sendOrChange">Bidal ezazu edo aldatu nahi duzu?</string>
+<string name="notUnderstand">Ez nuen ulertzen.</string>
+<string name="yesorno">Esan dezakezu: bai edo ez.</string>
+<string name="scc">Esan dezakezu: bidali, aldatu edo bertan behera utzi.</string>
+<string name="longmessage">Mezu luzea jaso da. Irakurri nahi al duzu?</string>
+<string name="yes">bai</string>
+<string name="no">ez</string>
+<string name="send">bidali</string>
+<string name="change">aldaketaren</string>
+<string name="cancel">bertan behera</string>
+<string name="whatsthemessage">Zer da mezua?</string>
+<string name="gotit">Got it, hemen zure mezua da</string>
+<string name="aborting">Barkatu, ez dut ulertzen, bertan behera uzten</string>
+<string name="sent">Mezua bidali da</string>
+</resources>

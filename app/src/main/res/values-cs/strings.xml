@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">CZ</string>
+<string name="replyQuestion">Chcete odpovědět?</string>
+<string name="sendOrChange">Chcete je odeslat nebo změnit?</string>
+<string name="notUnderstand">Nerozuměl jsem.</string>
+<string name="yesorno">Můžete říct: ano nebo ne.</string>
+<string name="scc">Můžete říct: odeslat, změnit nebo zrušit.</string>
+<string name="longmessage">Byla přijata dlouhá zpráva, chcete ji přečíst?</string>
+<string name="yes">Ano</string>
+<string name="no">ne</string>
+<string name="send">poslat</string>
+<string name="change">změna</string>
+<string name="cancel">zrušení</string>
+<string name="whatsthemessage">Jaká je zpráva?</string>
+<string name="gotit">Mám to, tady je vaše zpráva</string>
+<string name="aborting">Omlouvám se, nerozumím, přerušuji</string>
+<string name="sent">Zpráva odeslána</string>
+</resources>

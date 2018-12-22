@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">AO</string>
+<string name="replyQuestion">Você quer responder?</string>
+<string name="sendOrChange">Você quer enviá-lo ou alterá-lo?</string>
+<string name="notUnderstand">Eu não entendi.</string>
+<string name="yesorno">Você pode dizer: sim ou não.</string>
+<string name="scc">Você pode dizer: enviar, alterar ou cancelar.</string>
+<string name="longmessage">Longa mensagem recebida, você quer lê-lo?</string>
+<string name="yes">sim</string>
+<string name="no">não</string>
+<string name="send">mandar</string>
+<string name="change">mudança</string>
+<string name="cancel">cancelar</string>
+<string name="whatsthemessage">Qual é a mensagem?</string>
+<string name="gotit">Entendi, aqui está sua mensagem</string>
+<string name="aborting">Desculpe eu não entendo, abortando</string>
+<string name="sent">Mensagem enviada</string>
+</resources>

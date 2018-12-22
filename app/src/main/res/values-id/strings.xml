@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">ID</string>
+<string name="replyQuestion">Apakah Anda ingin membalas?</string>
+<string name="sendOrChange">Apakah Anda ingin mengirim atau mengubahnya?</string>
+<string name="notUnderstand">Saya tidak mengerti.</string>
+<string name="yesorno">Anda bisa mengatakan: ya atau tidak.</string>
+<string name="scc">Anda dapat mengatakan: kirim, ubah, atau batal.</string>
+<string name="longmessage">Pesan panjang diterima, Apakah Anda ingin membacanya?</string>
+<string name="yes">iya nih</string>
+<string name="no">tidak</string>
+<string name="send">kirim</string>
+<string name="change">perubahan</string>
+<string name="cancel">membatalkan</string>
+<string name="whatsthemessage">Apa pesannya?</string>
+<string name="gotit">Oke, ini pesan Anda</string>
+<string name="aborting">Maaf saya tidak mengerti, batal</string>
+<string name="sent">Pesan terkirim</string>
+</resources>

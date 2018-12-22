@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">IL</string>
+<string name="replyQuestion">האם אתה רוצה להשיב?</string>
+<string name="sendOrChange">האם ברצונך לשלוח אותו או לשנות אותו?</string>
+<string name="notUnderstand">לא הבנתי.</string>
+<string name="yesorno">אתה יכול לומר: כן או לא.</string>
+<string name="scc">ניתן לומר: שלח, שנה או בטל.</string>
+<string name="longmessage">התקבלה הודעה ארוכה, האם ברצונך לקרוא אותה?</string>
+<string name="yes">כן</string>
+<string name="no">לא</string>
+<string name="send">שלח</string>
+<string name="change">שינוי</string>
+<string name="cancel">ביטול</string>
+<string name="whatsthemessage">מה המסר?</string>
+<string name="gotit">הנה, הנה המסר שלך</string>
+<string name="aborting">ללא שם</string>
+<string name="sent">הודעה נשלחה</string>
+</resources>

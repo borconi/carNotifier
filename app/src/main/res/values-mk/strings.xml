@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">MK</string>
+<string name="replyQuestion">Дали сакате да одговорите?</string>
+<string name="sendOrChange">Дали сакате да го испратите или да го промените?</string>
+<string name="notUnderstand">Јас не разбирам.</string>
+<string name="yesorno">Може да се каже: да или не.</string>
+<string name="scc">Можете да кажете: пратете, менувајте или откажете.</string>
+<string name="longmessage">Добиена долга порака, Дали сакате да ја прочитате?</string>
+<string name="yes">да</string>
+<string name="no">не</string>
+<string name="send">испрати</string>
+<string name="change">промена</string>
+<string name="cancel">откажете</string>
+<string name="whatsthemessage">Која е пораката?</string>
+<string name="gotit">Добив, тука е твојата порака</string>
+<string name="aborting">Жалам што не го разбирам, прекинувам</string>
+<string name="sent">Испратена порака</string>
+</resources>

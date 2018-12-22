@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">GR</string>
+<string name="replyQuestion">Θέλετε να απαντήσετε;</string>
+<string name="sendOrChange">Θέλετε να το στείλετε ή να το αλλάξετε</string>
+<string name="notUnderstand">Δεν κατάλαβα.</string>
+<string name="yesorno">Μπορείτε να πείτε: ναι ή όχι.</string>
+<string name="scc">Μπορείτε να πείτε: αποστολή, αλλαγή ή ακύρωση.</string>
+<string name="longmessage">Μεγάλο μήνυμα που ελήφθη, Θέλετε να το διαβάσετε</string>
+<string name="yes">Ναί</string>
+<string name="no">οχι</string>
+<string name="send">στείλετε</string>
+<string name="change">αλλαγή</string>
+<string name="cancel">Ματαίωση</string>
+<string name="whatsthemessage">Ποιο είναι το μήνυμα</string>
+<string name="gotit">Το πήρα, εδώ είναι το μήνυμά σας</string>
+<string name="aborting">Συγνώμη, δεν καταλαβαίνω, ματαίω</string>
+<string name="sent">Το μήνυμα στάλθηκε</string>
+</resources>

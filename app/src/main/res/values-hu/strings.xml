@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">HU</string>
+<string name="replyQuestion">Szeretné válaszolni?</string>
+<string name="sendOrChange">Szeretné elküldeni vagy megváltoztatni?</string>
+<string name="notUnderstand">Nem értettem.</string>
+<string name="yesorno">Azt mondhatod hogy: igen vagy nem.</string>
+<string name="scc">Azt mondhatod hogy: küld, módosít vagy mégse.</string>
+<string name="longmessage">Hosszú üzenet érkezett, Szeretné felolvastatni?</string>
+<string name="yes">igen</string>
+<string name="no">nem</string>
+<string name="send">elküld</string>
+<string name="change">módosít</string>
+<string name="cancel">mégse</string>
+<string name="whatsthemessage">Mi az üzenet?</string>
+<string name="gotit">Megvan, az üzeneted</string>
+<string name="aborting">Sajnálom, hogy nem értem, abbahagytam</string>
+<string name="sent">Üzenet elküldve</string>
+</resources>

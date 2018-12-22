@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">AR</string>
+<string name="replyQuestion">¿Quieres responder?</string>
+<string name="sendOrChange">¿Quieres enviarlo o cambiarlo?</string>
+<string name="notUnderstand">Yo no entendi</string>
+<string name="yesorno">Puedes decir: sí o no.</string>
+<string name="scc">Puedes decir: enviar, cambiar o cancelar.</string>
+<string name="longmessage">Mensaje largo recibido, ¿Quieres leerlo?</string>
+<string name="yes">Sí</string>
+<string name="no">no</string>
+<string name="send">enviar</string>
+<string name="change">cambio</string>
+<string name="cancel">cancelar</string>
+<string name="whatsthemessage">Cual es el mensaje</string>
+<string name="gotit">Entendido, aquí está tu mensaje</string>
+<string name="aborting">Perdon no entiendo abortando</string>
+<string name="sent">Mensaje enviado</string>
+</resources>

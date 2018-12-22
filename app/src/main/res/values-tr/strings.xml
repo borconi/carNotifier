@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">TR</string>
+<string name="replyQuestion">Cevap vermek ister misiniz?</string>
+<string name="sendOrChange">Göndermek mi yoksa değiştirmek mi istiyorsunuz?</string>
+<string name="notUnderstand">Anlamadım.</string>
+<string name="yesorno">Şunu söyleyebilirsiniz: evet ya da hayır.</string>
+<string name="scc">Şunu söyleyebilirsiniz: gönder, değiştir veya iptal et.</string>
+<string name="longmessage">Uzun bir mesaj alındı, okumak ister misiniz?</string>
+<string name="yes">evet</string>
+<string name="no">hayır</string>
+<string name="send">gönder</string>
+<string name="change">değiştir</string>
+<string name="cancel">iptal et</string>
+<string name="whatsthemessage">Mesaj nedir?</string>
+<string name="gotit">Anladım, işte mesajınız</string>
+<string name="aborting">Üzgünüm, anlamıyorum, iptal ediyorum</string>
+<string name="sent">Mesaj gönderildi</string>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">PK</string>
+<string name="replyQuestion">کیا آپ جواب دینا چاہتے ہیں؟</string>
+<string name="sendOrChange">کیا آپ اسے بھیجنا چاہتے ہیں یا اسے تبدیل کرنا چاہتے ہیں؟</string>
+<string name="notUnderstand">میں سمجھ نہیں سکا.</string>
+<string name="yesorno">آپ کہہ سکتے ہیں: ہاں یا نہیں.</string>
+<string name="scc">آپ کہہ سکتے ہیں: بھیجیں، تبدیل یا منسوخ کریں.</string>
+<string name="longmessage">طویل پیغام موصول ہوا، کیا آپ اسے پڑھنا چاہتے ہیں؟</string>
+<string name="yes">جی ہاں</string>
+<string name="no">نہیں</string>
+<string name="send">بھیجیں</string>
+<string name="change">تبدیل کریں</string>
+<string name="cancel">منسوخ کریں</string>
+<string name="whatsthemessage">پیغام کیا ہے؟</string>
+<string name="gotit">یہ ملا ہے، یہ آپ کا پیغام ہے</string>
+<string name="aborting">معذرت، مجھے سمجھ نہیں آ رہا ہے</string>
+<string name="sent">پیغام چلا گیا</string>
+</resources>

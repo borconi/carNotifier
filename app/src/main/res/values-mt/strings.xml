@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">MT</string>
+<string name="replyQuestion">Trid tirrispondi?</string>
+<string name="sendOrChange">Trid tibgħatha jew tibdelha?</string>
+<string name="notUnderstand">Ma kontx naf.</string>
+<string name="yesorno">Tista \'tgħid: iva jew le.</string>
+<string name="scc">Tista \'tgħid: tibgħat, tibdel jew tħassar.</string>
+<string name="longmessage">Messaġġ twil riċevut, Trid taqraha?</string>
+<string name="yes">iva</string>
+<string name="no">nru</string>
+<string name="send">ibgħat</string>
+<string name="change">bidla</string>
+<string name="cancel">tikkanċella</string>
+<string name="whatsthemessage">X\'inhu l-messaġġ?</string>
+<string name="gotit">Ghandek, hawn huwa l-messaġġ tiegħek</string>
+<string name="aborting">Jiddispjacini Ma nifhimx, abort</string>
+<string name="sent">Messaġġ mibgħut</string>
+</resources>

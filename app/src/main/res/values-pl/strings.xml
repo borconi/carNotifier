@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">PL</string>
+<string name="replyQuestion">Czy chcesz odpowiedzieć?</string>
+<string name="sendOrChange">Czy chcesz go wysłać, czy zmienić?</string>
+<string name="notUnderstand">Nie zrozumiałem.</string>
+<string name="yesorno">Możesz powiedzieć: tak lub nie.</string>
+<string name="scc">Możesz powiedzieć: wyślij, zmień lub anuluj.</string>
+<string name="longmessage">Otrzymano długą wiadomość, Czy chcesz ją przeczytać?</string>
+<string name="yes">tak</string>
+<string name="no">nie</string>
+<string name="send">wysłać</string>
+<string name="change">zmiana</string>
+<string name="cancel">Anuluj</string>
+<string name="whatsthemessage">Jaka jest wiadomość?</string>
+<string name="gotit">Rozumiem, oto twoja wiadomość</string>
+<string name="aborting">Przepraszam, nie rozumiem, przerywam</string>
+<string name="sent">Wiadomość wysłana</string>
+</resources>

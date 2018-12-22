@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">KE</string>
+<string name="replyQuestion">Unataka kujibu?</string>
+<string name="sendOrChange">Unataka kutuma au kubadilisha?</string>
+<string name="notUnderstand">Sikuelewa.</string>
+<string name="yesorno">Unaweza kusema: ndiyo au hapana.</string>
+<string name="scc">Unaweza kusema: kutuma, kubadili au kufuta.</string>
+<string name="longmessage">Ujumbe wa muda mrefu umepokea, Je! Unataka kuisoma?</string>
+<string name="yes">Ndiyo</string>
+<string name="no">hapana</string>
+<string name="send">tuma</string>
+<string name="change">mabadiliko</string>
+<string name="cancel">kufuta</string>
+<string name="whatsthemessage">Ujumbe ni nini?</string>
+<string name="gotit">Umeipata, hapa ni ujumbe wako</string>
+<string name="aborting">Samahani sielewi, nikiacha</string>
+<string name="sent">Ujumbe umetumwa</string>
+</resources>

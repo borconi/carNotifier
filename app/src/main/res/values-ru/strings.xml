@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">RU</string>
+<string name="replyQuestion">Вы хотите ответить?</string>
+<string name="sendOrChange">Вы хотите отправить его или изменить?</string>
+<string name="notUnderstand">Я не понял.</string>
+<string name="yesorno">Вы можете сказать: да или нет.</string>
+<string name="scc">Вы можете сказать: отправить, изменить или отменить.</string>
+<string name="longmessage">Получено длинное сообщение, вы хотите его прочитать?</string>
+<string name="yes">да</string>
+<string name="no">нет</string>
+<string name="send">послать</string>
+<string name="change">менять</string>
+<string name="cancel">отменить</string>
+<string name="whatsthemessage">Что такое сообщение?</string>
+<string name="gotit">Получил это, вот ваше сообщение</string>
+<string name="aborting">Извините, я не понимаю, прерывая</string>
+<string name="sent">Сообщение отправлено</string>
+</resources>

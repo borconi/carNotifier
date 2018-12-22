@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">BA</string>
+<string name="replyQuestion">Желите ли одговорити?</string>
+<string name="sendOrChange">Да ли желите да га пошаљете или промените?</string>
+<string name="notUnderstand">Нисам разумео.</string>
+<string name="yesorno">Можете рећи: да или не.</string>
+<string name="scc">Можете рећи: послати, променити или отказати.</string>
+<string name="longmessage">Дуга примљена порука, Желите ли да је прочитате?</string>
+<string name="yes">да</string>
+<string name="no">не</string>
+<string name="send">пошаљи</string>
+<string name="change">промена</string>
+<string name="cancel">поништити</string>
+<string name="whatsthemessage">Која је порука?</string>
+<string name="gotit">Имам, ево твоје поруке</string>
+<string name="aborting">Извините што не разумем, прекидам</string>
+<string name="sent">Порука послата</string>
+</resources>

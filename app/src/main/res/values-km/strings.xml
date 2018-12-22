@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">KH</string>
+<string name="replyQuestion">តើអ្នកចង់ឆ្លើយតបទេ?</string>
+<string name="sendOrChange">តើអ្នកចង់ផ្ញើឬផ្លាស់ប្តូរវាទេ?</string>
+<string name="notUnderstand">ខ្ញុំមិនយល់ទេ។</string>
+<string name="yesorno">អ្នកអាចនិយាយថា: បាទឬទេ។</string>
+<string name="scc">អ្នកអាចនិយាយថា: ផ្ញើការផ្លាស់ប្តូរឬបោះបង់។</string>
+<string name="longmessage">បានទទួលសារវែងតើអ្នកចង់អានវាទេ?</string>
+<string name="yes">បាទ</string>
+<string name="no">ទេ</string>
+<string name="send">ផ្ញើ</string>
+<string name="change">ផ្លាស់ប្តូរ</string>
+<string name="cancel">បោះបង់</string>
+<string name="whatsthemessage">តើអ្វីជាសារ?</string>
+<string name="gotit">ទទួលបានវានៅទីនេះគឺសាររបស់អ្នក</string>
+<string name="aborting">សូមអភ័យទោសខ្ញុំមិនយល់ពីការបោះបង់</string>
+<string name="sent">បានផ្ញើសារ</string>
+</resources>

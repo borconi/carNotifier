@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">SI</string>
+<string name="replyQuestion">Želite odgovoriti?</string>
+<string name="sendOrChange">Ali ga želite poslati ali spremeniti?</string>
+<string name="notUnderstand">Nisem razumel.</string>
+<string name="yesorno">Lahko rečeš: da ali ne.</string>
+<string name="scc">Lahko rečete: pošiljanje, spreminjanje ali preklicanje.</string>
+<string name="longmessage">Dolgo sporočilo je prejeto, ga želite prebrati?</string>
+<string name="yes">Ja</string>
+<string name="no">ne</string>
+<string name="send">pošlji</string>
+<string name="change">sprememba</string>
+<string name="cancel">prekliči</string>
+<string name="whatsthemessage">Kakšno sporočilo?</string>
+<string name="gotit">Imam, tukaj je vaše sporočilo</string>
+<string name="aborting">Oprosti, ne razumem, prekinam</string>
+<string name="sent">Sporočilo poslano</string>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">CN</string>
+<string name="replyQuestion">你想回复吗？</string>
+<string name="sendOrChange">你想发送它还是改变它？</string>
+<string name="notUnderstand">我不明白。</string>
+<string name="yesorno">你可以说：是或否。</string>
+<string name="scc">你可以说：发送，更改或取消。</string>
+<string name="longmessage">收到长消息，你想看吗？</string>
+<string name="yes">是</string>
+<string name="no">没有</string>
+<string name="send">发送</string>
+<string name="change">更改</string>
+<string name="cancel">取消</string>
+<string name="whatsthemessage">消息是什么？</string>
+<string name="gotit">知道了，这是你的消息：</string>
+<string name="aborting">对不起，我不明白，堕胎</string>
+<string name="sent">消息已发送</string>
+</resources>

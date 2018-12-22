@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">TH</string>
+<string name="replyQuestion">คุณต้องการตอบหรือไม่?</string>
+<string name="sendOrChange">คุณต้องการส่งหรือเปลี่ยนแปลงหรือไม่?</string>
+<string name="notUnderstand">ฉันไม่เข้าใจ</string>
+<string name="yesorno">คุณสามารถพูดได้ว่าใช่หรือไม่</string>
+<string name="scc">คุณสามารถพูดได้ว่า: ส่งเปลี่ยนหรือยกเลิก</string>
+<string name="longmessage">ข้อความยาวได้รับคุณต้องการอ่านหรือไม่?</string>
+<string name="yes">ใช่</string>
+<string name="no">ไม่</string>
+<string name="send">ส่ง</string>
+<string name="change">เปลี่ยนแปลง</string>
+<string name="cancel">ยกเลิก</string>
+<string name="whatsthemessage">ข้อความคืออะไร?</string>
+<string name="gotit">นี่เป็นข้อความของคุณ</string>
+<string name="aborting">ขออภัยฉันไม่เข้าใจยกเลิก</string>
+<string name="sent">ส่งข้อความ</string>
+</resources>

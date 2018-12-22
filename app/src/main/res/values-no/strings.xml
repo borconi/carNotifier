@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">BV</string>
+<string name="replyQuestion">Vil du svare?</string>
+<string name="sendOrChange">Vil du sende den eller endre den?</string>
+<string name="notUnderstand">Jeg forsto ikke.</string>
+<string name="yesorno">Du kan si: ja eller nei.</string>
+<string name="scc">Du kan si: send, endre eller avbryte.</string>
+<string name="longmessage">Lang melding mottatt, Vil du lese den?</string>
+<string name="yes">Ja</string>
+<string name="no">nei</string>
+<string name="send">sende</string>
+<string name="change">endring</string>
+<string name="cancel">Avbryt</string>
+<string name="whatsthemessage">Hva er meldingen?</string>
+<string name="gotit">Fikk det, her er meldingen din</string>
+<string name="aborting">Beklager, jeg forstår ikke, avbryter</string>
+<string name="sent">Melding sendt</string>
+</resources>

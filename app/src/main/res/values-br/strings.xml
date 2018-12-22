@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">FR</string>
+<string name="replyQuestion">Do you want to reply?</string>
+<string name="sendOrChange">Do you want to send it or change it?</string>
+<string name="notUnderstand">I didn\'t understand.</string>
+<string name="yesorno">You can say: yes or no.</string>
+<string name="scc">You can say: send, change or cancel.</string>
+<string name="longmessage">Long message received, Do you want to read it?</string>
+<string name="yes">ull</string>
+<string name="no">ull</string>
+<string name="send">ull</string>
+<string name="change">ull</string>
+<string name="cancel">ull</string>
+<string name="whatsthemessage">ull,null,</string>
+<string name="gotit">ull,null,</string>
+<string name="aborting">ull,null,</string>
+<string name="sent">ull,null,</string>
+</resources>

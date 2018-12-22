@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">IR</string>
+<string name="replyQuestion">میخواهید پاسخ دهید؟</string>
+<string name="sendOrChange">آیا می خواهید آن را ارسال یا تغییر دهید؟</string>
+<string name="notUnderstand">من نمی فهمیدم</string>
+<string name="yesorno">شما می توانید بگویید: بله یا نه.</string>
+<string name="scc">می توانید بگویید: ارسال، تغییر یا لغو</string>
+<string name="longmessage">پیام بلند دریافت کردید، میخواهید آن را بخوانید؟</string>
+<string name="yes">بله</string>
+<string name="no">نه</string>
+<string name="send">ارسال</string>
+<string name="change">تغییر دادن</string>
+<string name="cancel">لغو</string>
+<string name="whatsthemessage">پیام چیست؟</string>
+<string name="gotit">آن را دریافت کرد، پیام شما است</string>
+<string name="aborting">با عرض پوزش من نمی فهمم، سقط جنین</string>
+<string name="sent">پیغام فرستاده شد</string>
+</resources>

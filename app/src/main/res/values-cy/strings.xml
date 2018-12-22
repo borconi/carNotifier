@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">GB</string>
+<string name="replyQuestion">Ydych chi am ateb?</string>
+<string name="sendOrChange">Ydych chi am ei hanfon neu ei newid?</string>
+<string name="notUnderstand">Doeddwn i ddim yn deall.</string>
+<string name="yesorno">Gallwch ddweud: ie neu na.</string>
+<string name="scc">Gallwch ddweud: anfon, newid neu ganslo.</string>
+<string name="longmessage">Neges hir a dderbyniwyd, Ydych chi am ei ddarllen?</string>
+<string name="yes">Ydw</string>
+<string name="no">na</string>
+<string name="send">anfon</string>
+<string name="change">newid</string>
+<string name="cancel">canslo</string>
+<string name="whatsthemessage">Beth yw\'r neges?</string>
+<string name="gotit">Wedi\'i gael, dyma\'ch neges chi</string>
+<string name="aborting">Mae\'n ddrwg gennym, dwi ddim yn deall, erthylu</string>
+<string name="sent">Neges a anfonwyd</string>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">BD</string>
+<string name="replyQuestion">আপনি উত্তর দিতে চান?</string>
+<string name="sendOrChange">আপনি কি এটি পাঠাতে বা পরিবর্তন করতে চান?</string>
+<string name="notUnderstand">আমি বুঝতে পারিনি।</string>
+<string name="yesorno">আপনি বলতে পারেন: হ্যাঁ বা না।</string>
+<string name="scc">আপনি বলতে পারেন: পাঠান, পরিবর্তন বা বাতিল।</string>
+<string name="longmessage">লম্বা বার্তা প্রাপ্ত, আপনি এটা পড়তে চান?</string>
+<string name="yes">হাঁ</string>
+<string name="no">না</string>
+<string name="send">পাঠান</string>
+<string name="change">পরিবর্তন</string>
+<string name="cancel">বাতিল</string>
+<string name="whatsthemessage">বার্তা কি?</string>
+<string name="gotit">এটি পেয়েছেন, এখানে আপনার বার্তা</string>
+<string name="aborting">দুঃখিত আমি বুঝতে পারছি না, aborting</string>
+<string name="sent">বার্তা পাঠানো</string>
+</resources>

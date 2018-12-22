@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">BA</string>
+<string name="replyQuestion">צי איר ווילן צו ענטפֿערן?</string>
+<string name="sendOrChange">צי איר ווילן צו שיקן עס אָדער טוישן עס?</string>
+<string name="notUnderstand">איך טאָן נישט פֿאַרשטיין.</string>
+<string name="yesorno">איר קענען זאָגן: יאָ אָדער ניט.</string>
+<string name="scc">איר קענען זאָגן: שיקן, טוישן אָדער באָטל מאַכן.</string>
+<string name="longmessage">לאַנג אָנזאָג באקומען, איר ווילן צו לייענען עס?</string>
+<string name="yes">yes</string>
+<string name="no">ניין</string>
+<string name="send">שיקן</string>
+<string name="change">טוישן</string>
+<string name="cancel">באָטל מאַכן</string>
+<string name="whatsthemessage">וואָס איז דער אָנזאָג?</string>
+<string name="gotit">גאָט, דאָס איז דיין אָנזאָג</string>
+<string name="aborting">אנטשולדיגט, איך טאָן נישט פֿאַרשטיין, אַבאָרטינג</string>
+<string name="sent">Message sent</string>
+</resources>

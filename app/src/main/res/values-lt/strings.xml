@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">LT</string>
+<string name="replyQuestion">Ar norite atsakyti?</string>
+<string name="sendOrChange">Ar norite jį išsiųsti ar pakeisti?</string>
+<string name="notUnderstand">Aš nesupratau.</string>
+<string name="yesorno">Galite pasakyti: taip ar ne.</string>
+<string name="scc">Galite pasakyti: siųsti, keisti ar atšaukti.</string>
+<string name="longmessage">Gauta ilgoji žinutė, ar norite ją perskaityti?</string>
+<string name="yes">Taip</string>
+<string name="no">ne</string>
+<string name="send">siųsti</string>
+<string name="change">keisti</string>
+<string name="cancel">atšaukti</string>
+<string name="whatsthemessage">Kokia yra žinia?</string>
+<string name="gotit">Pasirodė, čia yra jūsų žinutė</string>
+<string name="aborting">Atsiprašau, nesuprantu, nutraukiu</string>
+<string name="sent">Žinutė išsiųsta</string>
+</resources>

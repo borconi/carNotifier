@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">RO</string>
+<string name="replyQuestion">Doriți să răspundeți?</string>
+<string name="sendOrChange">Doriți să le trimiteți sau să le schimbați?</string>
+<string name="notUnderstand">Nu am înțeles.</string>
+<string name="yesorno">Puteți spune: da sau nu.</string>
+<string name="scc">Poți să spui: trimite, modifică sau anulează.</string>
+<string name="longmessage">Mesaj lung receptionat vrei să-l citești?</string>
+<string name="yes">da</string>
+<string name="no">nu</string>
+<string name="send">trimite</string>
+<string name="change">modifică</string>
+<string name="cancel">Anulare</string>
+<string name="whatsthemessage">Care este mesajul?</string>
+<string name="gotit">Am inteles, iata mesajul tau</string>
+<string name="aborting">Îmi pare rău că nu înțeleg, abandonez</string>
+<string name="sent">Mesaj trimis</string>
+</resources>

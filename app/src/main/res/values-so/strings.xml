@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">SO</string>
+<string name="replyQuestion">Ma rabtaa inaad ka jawaabto?</string>
+<string name="sendOrChange">Ma rabtaa inaad dirto ama bedesho?</string>
+<string name="notUnderstand">Anigu ma fahmin.</string>
+<string name="yesorno">Waxaad dhihi kartaa: haa ama maya.</string>
+<string name="scc">Waxaad dhihi kartaa: dir, beddelaan ama baabi\'iyaan.</string>
+<string name="longmessage">Fariin dheer oo la helay, Ma rabtaa inaad akhriso?</string>
+<string name="yes">Haa</string>
+<string name="no">maya</string>
+<string name="send">dir</string>
+<string name="change">isbedel</string>
+<string name="cancel">joojiso</string>
+<string name="whatsthemessage">Waa maxay farriinta?</string>
+<string name="gotit">Hadi, halkan waa fariin</string>
+<string name="aborting">Waan ka xumahay Anigu ma fahmin, soo deyn</string>
+<string name="sent">Farriinta loo diray</string>
+</resources>

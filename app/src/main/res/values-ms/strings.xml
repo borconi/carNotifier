@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">BN</string>
+<string name="replyQuestion">Adakah anda mahu membalas?</string>
+<string name="sendOrChange">Adakah anda mahu menghantar atau mengubahnya?</string>
+<string name="notUnderstand">Saya tidak faham.</string>
+<string name="yesorno">Anda boleh berkata: ya atau tidak.</string>
+<string name="scc">Anda boleh mengatakan: menghantar, menukar atau membatalkan.</string>
+<string name="longmessage">Mesej lama yang diterima, Adakah anda ingin membacanya?</string>
+<string name="yes">Ya</string>
+<string name="no">tidak</string>
+<string name="send">hantar</string>
+<string name="change">ubah</string>
+<string name="cancel">batalkan</string>
+<string name="whatsthemessage">Apa mesejnya?</string>
+<string name="gotit">Punya, inilah mesej anda</string>
+<string name="aborting">Maaf saya tidak faham, aborting</string>
+<string name="sent">Pesanan dihantar</string>
+</resources>

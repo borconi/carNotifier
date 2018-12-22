@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">BY</string>
+<string name="replyQuestion">Вы хочаце адказаць?</string>
+<string name="sendOrChange">Вы хочаце, каб адправіць яго ці змяніць яго?</string>
+<string name="notUnderstand">Я не разумею.</string>
+<string name="yesorno">Вы можаце сказаць: так ці не.</string>
+<string name="scc">Вы можаце сказаць: адправіць, змяніць або адмяніць.</string>
+<string name="longmessage">Long атрыманага паведамлення, Вы хочаце прачытаць?</string>
+<string name="yes">ды</string>
+<string name="no">няма</string>
+<string name="send">паслаць</string>
+<string name="change">змена</string>
+<string name="cancel">адмяніць</string>
+<string name="whatsthemessage">Што паведамленне?</string>
+<string name="gotit">Зразумеў, вось ваша паведамленне</string>
+<string name="aborting">На жаль, я не разумею, адкідванне</string>
+<string name="sent">паведамленне адпраўлена</string>
+</resources>

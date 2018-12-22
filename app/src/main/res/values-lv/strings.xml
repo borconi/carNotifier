@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">LV</string>
+<string name="replyQuestion">Vai vēlaties atbildēt?</string>
+<string name="sendOrChange">Vai vēlaties to nosūtīt vai mainīt?</string>
+<string name="notUnderstand">Es nesapratu.</string>
+<string name="yesorno">Jūs varat teikt: jā vai nē.</string>
+<string name="scc">Jūs varat teikt: nosūtīt, mainīt vai atcelt.</string>
+<string name="longmessage">Saņemta garā ziņa, vai vēlaties to izlasīt?</string>
+<string name="yes">jā</string>
+<string name="no">nē</string>
+<string name="send">sūtīt</string>
+<string name="change">mainīt</string>
+<string name="cancel">atcelt</string>
+<string name="whatsthemessage">Kāda ir ziņa?</string>
+<string name="gotit">Got, šeit ir jūsu ziņa</string>
+<string name="aborting">Atvainojiet, es nesaprotu, pārtraucot</string>
+<string name="sent">Ziņa nosūtīta</string>
+</resources>

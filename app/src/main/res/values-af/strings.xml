@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">ZA</string>
+<string name="replyQuestion">Wil jy antwoord?</string>
+<string name="sendOrChange">Wil jy dit stuur of verander?</string>
+<string name="notUnderstand">Ek het nie verstaan ​​nie.</string>
+<string name="yesorno">Jy kan sê: ja of nee.</string>
+<string name="scc">U kan sê: stuur, verander of kanselleer.</string>
+<string name="longmessage">Lang boodskap ontvang, Wil jy dit lees?</string>
+<string name="yes">Ja</string>
+<string name="no">geen</string>
+<string name="send">stuur</string>
+<string name="change">verandering</string>
+<string name="cancel">kanselleer</string>
+<string name="whatsthemessage">Wat is die boodskap?</string>
+<string name="gotit">Het dit, hier is jou boodskap</string>
+<string name="aborting">Jammer ek verstaan ​​nie, aborteer nie</string>
+<string name="sent">Boodskap gestuur</string>
+</resources>

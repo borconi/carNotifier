@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">HR</string>
+<string name="replyQuestion">Želite li odgovoriti?</string>
+<string name="sendOrChange">Želite li ga poslati ili promijeniti?</string>
+<string name="notUnderstand">Nisam razumjela.</string>
+<string name="yesorno">Možete reći: da ili ne.</string>
+<string name="scc">Možete reći: poslati, promijeniti ili otkazati.</string>
+<string name="longmessage">Primljena dugo poruka, želite li ga pročitati?</string>
+<string name="yes">da</string>
+<string name="no">ne</string>
+<string name="send">poslati</string>
+<string name="change">promijeniti</string>
+<string name="cancel">otkazati</string>
+<string name="whatsthemessage">Koja je poruka?</string>
+<string name="gotit">Saznajte, ovdje je vaša poruka</string>
+<string name="aborting">Žao mi je što ne razumijem, prekidam</string>
+<string name="sent">Poruka je poslana</string>
+</resources>

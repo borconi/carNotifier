@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">DK</string>
+<string name="replyQuestion">Vil du svare?</string>
+<string name="sendOrChange">Vil du sende det eller ændre det?</string>
+<string name="notUnderstand">Jeg forstod ikke.</string>
+<string name="yesorno">Du kan sige: ja eller nej.</string>
+<string name="scc">Du kan sige: send, ændre eller annullere.</string>
+<string name="longmessage">Lang besked modtaget, Vil du læse det?</string>
+<string name="yes">ja</string>
+<string name="no">ingen</string>
+<string name="send">sende</string>
+<string name="change">lave om</string>
+<string name="cancel">afbestille</string>
+<string name="whatsthemessage">Hvad er beskeden?</string>
+<string name="gotit">Fik det, her er din besked</string>
+<string name="aborting">Undskyld, jeg forstår ikke, afbryder</string>
+<string name="sent">Besked sendt</string>
+</resources>

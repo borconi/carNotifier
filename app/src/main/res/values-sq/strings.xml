@@ -1,0 +1,18 @@
+<resources>
+<string name="countryCode">AL</string>
+<string name="replyQuestion">Dëshiron të përgjigjesh?</string>
+<string name="sendOrChange">Dëshiron ta dërgosh ose ta ndryshosh?</string>
+<string name="notUnderstand">Nuk e kuptoja.</string>
+<string name="yesorno">Ju mund të thoni: po ose jo.</string>
+<string name="scc">Ju mund të thoni: dërgoni, ndryshoni ose anulloni.</string>
+<string name="longmessage">Mesazhi i gjatë ka marrë, A doni ta lexoni atë?</string>
+<string name="yes">po</string>
+<string name="no">jo</string>
+<string name="send">dërgoj</string>
+<string name="change">ndryshim</string>
+<string name="cancel">anuloj</string>
+<string name="whatsthemessage">Cili është mesazhi?</string>
+<string name="gotit">Got atë, këtu është mesazhi juaj</string>
+<string name="aborting">Më vjen keq që nuk e kuptoj, ndërpritet</string>
+<string name="sent">Mesazhi u Dergua</string>
+</resources>
