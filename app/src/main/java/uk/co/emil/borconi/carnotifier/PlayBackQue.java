@@ -20,7 +20,7 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-public class PlayBackQue extends BroadcastReceiver implements PlayBackQueListener{
+public class PlayBackQue implements PlayBackQueListener{
     private static final String TAG ="PlayBackQue" ;
     public SortedMapWithCallBack<Long,PlayBackQueMessage> messages;
     TextToSpeech tts;
@@ -28,20 +28,23 @@ public class PlayBackQue extends BroadcastReceiver implements PlayBackQueListene
     AudioAttributes audioAttributes;
     boolean isPlaying=false;
     public Context appContext;
-    private boolean phoneInUse;
+    boolean phoneInUse;
     CarnotificationListener carnotificationListener;
 
-    public PlayBackQue() {}
+    public PlayBackQue() {
+
+    }
 
     public PlayBackQue(CarnotificationListener carnotificationListener) {
         this.carnotificationListener=carnotificationListener;
         messages= new TreeMapCalllback<>(this);
+        appContext=carnotificationListener.getApplicationContext();
     }
     synchronized public void add(String text, String language, Action action)
     {
         Log.d("CarNotif", "Message added to playback que");
         messages.put(System.currentTimeMillis(),new PlayBackQueMessage(text,language,action,appContext));
-        playQuedMessages();
+        //playQuedMessages();
     }
 
     void playQuedMessages()
@@ -59,58 +62,7 @@ public class PlayBackQue extends BroadcastReceiver implements PlayBackQueListene
     }
 
 
-
-
-    @Override
-    public void onReceive(Context context, Intent intent) {
-
-        if (intent.getAction()!=null && intent.getAction().equalsIgnoreCase("android.app.action.ENTER_CAR_MODE"))
-        {
-            Log.d("CarNotif","Enterng car mode");
-            carnotificationListener.soundPlayer=new CarNotificationSoundPlayer(context.getApplicationContext(),this);
-            appContext=context.getApplicationContext();
-            isPlaying=false;
-        }
-        else if (intent.getAction().equalsIgnoreCase("android.app.action.EXIT_CAR_MODE"))
-        {
-            Log.d("CarNotif","Exit car mode");
-            carnotificationListener.soundPlayer=null;
-            carnotificationListener.pastNot.clear();
-            tts.stop();
-            tts.shutdown();
-            tts=null;
-            messages.clear();
-        }
-        else if (intent.getAction().equalsIgnoreCase("android.intent.action.NEW_OUTGOING_CALL"))
-        {
-
-                onCall();
-        }
-        else if(intent.getAction().equals("android.intent.action.ACTION_PHONE_STATE_CHANGED") || intent.getAction().equals("android.intent.action.PHONE_STATE")){
-
-            String state = intent.getStringExtra(TelephonyManager.EXTRA_STATE);
-
-            if(state.equals(TelephonyManager.EXTRA_STATE_OFFHOOK)){
-
-                    onCall();
-            }
-
-            else if (state.equals(TelephonyManager.EXTRA_STATE_RINGING)){
-
-                    onCall();
-            }
-            else if(state.equals(TelephonyManager.EXTRA_STATE_IDLE)){
-               if (tts!=null)
-               {
-                   Log.d("TEST","Off call");
-                   phoneInUse=false;
-                   playQuedMessages();
-               }
-            }
-        }
-    }
-
-    private void onCall() {
+    void onCall() {
         Log.d("TEST","On call");
         if (tts!=null && tts.isSpeaking())
             tts.stop();
@@ -240,9 +192,10 @@ public class PlayBackQue extends BroadcastReceiver implements PlayBackQueListene
             ret = carAudioManager.requestAudioFocus(null, audioAttributes, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE);
             else
             {
+                Log.d("PlayBackQue","CarAudio not available using local");
                 AudioManager audioManager=(AudioManager) appContext.getSystemService(Context.AUDIO_SERVICE);
                 if (audioManager!=null)
-                ret=audioManager.requestAudioFocus(null,AudioManager.STREAM_NOTIFICATION,AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
+                ret=audioManager.requestAudioFocus(null,AudioManager.STREAM_MUSIC,AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
             }
         } catch (CarNotConnectedException e) {
             Log.e("carNotifier","not connected to the car");

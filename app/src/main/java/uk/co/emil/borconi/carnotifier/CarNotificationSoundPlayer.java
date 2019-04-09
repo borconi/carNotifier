@@ -31,18 +31,16 @@ public class CarNotificationSoundPlayer {
     private final static String TAG = "CarNotifSoundPlayer";
 
     final static int PLAYBACK_START_DELAY_MS = 300;
-    private final Car car;
-
     private @RawRes
     int mSoundResource;
     Context mContext;
     private  Handler mHandler;
     CarAudioManager carAudioManager;
-    private boolean isCarReady=false;
+    boolean isCarReady=false;
     AudioAttributes audioAttributes;
-    static boolean isTTSReady;
+    boolean isTTSReady;
     AudioManager manager;
-    private MediaPlayer mediaPlayer = new MediaPlayer();
+
     PlayBackQue playBackQue;
 
     //boolean isTTSReady;
@@ -52,15 +50,14 @@ public class CarNotificationSoundPlayer {
     public CarNotificationSoundPlayer(Context context,PlayBackQue playback) {
         this.mContext = context;
         this.mHandler = new Handler(context.getMainLooper());
-        car = Car.createCar(mContext, carReady);
         manager=(AudioManager)mContext.getSystemService(Context.AUDIO_SERVICE);
-        car.connect();
         playBackQue=playback;
         playback.tts = new TextToSpeech(mContext, new TTSCallBack(this, playback),"com.google.android.tts");
     }
 
     public void play(@RawRes int soundResource) {
         mSoundResource=soundResource;
+        final MediaPlayer mediaPlayer = new MediaPlayer();
         Log.d(TAG, "Starting");
         if (!isCarReady)  //if car is not ready and connected intrerupt;
         {
@@ -89,7 +86,7 @@ public class CarNotificationSoundPlayer {
                         mediaPlayer.stop();
                         mediaPlayer.release();
                         carAudioManager.abandonAudioFocus(null, audioAttributes);
-
+                        playBackQue.playQuedMessages();
                     } catch (Exception e) {
                         Log.w(TAG, "Error finalizing playback", e);
                     }
@@ -125,31 +122,7 @@ public class CarNotificationSoundPlayer {
 
 
 
-    private CarConnectionCallback carReady = new CarConnectionCallback() {
 
-        @Override
-        public void onConnected(Car car) {
-            isCarReady=true;
-            try {
-                Log.d("carNotif","Car Connected");
-              //  CarFirstPartyManager mgr = (CarFirstPartyManager) car.getCarManager(CarFirstPartyManager.SERVICE_NAME);
-                //mgr.
-                carAudioManager = car.getCarManager(CarAudioManager.class);
-                audioAttributes = carAudioManager.getAudioAttributesForCarUsage(CarAudioManager.CAR_AUDIO_USAGE_NOTIFICATION);
-                playBackQue.audioAttributes=audioAttributes;
-                playBackQue.carAudioManager=carAudioManager;
-              //  playbackQue=new PlayBackQue(carAudioManager,audioAttributes);
-            } catch (CarNotConnectedException e) {
-                e.printStackTrace();
-            }
-
-        }
-
-        @Override
-        public void onDisconnected(Car car) {
-            isCarReady=false;
-        }
-    };
 
 
 

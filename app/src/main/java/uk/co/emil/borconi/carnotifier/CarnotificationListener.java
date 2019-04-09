@@ -25,32 +25,22 @@ import android.preference.PreferenceManager;
 import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
 import android.speech.tts.TextToSpeech;
+import android.support.car.Car;
+import android.support.car.CarConnectionCallback;
 import android.support.car.CarNotConnectedException;
+import android.support.car.media.CarAudioManager;
 import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.RemoteInput;
-import android.text.TextUtils;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 
-import com.google.android.apps.auto.sdk.nav.CarNavExtender;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
 import com.google.android.apps.auto.sdk.notification.CarNotificationExtender;
-/*
-import com.optimaize.langdetect.LanguageDetector;
-import com.optimaize.langdetect.LanguageDetectorBuilder;
-import com.optimaize.langdetect.i18n.LdLocale;
-import com.optimaize.langdetect.ngram.NgramExtractors;
-import com.optimaize.langdetect.profiles.LanguageProfile;
-import com.optimaize.langdetect.profiles.LanguageProfileReader;
-import com.optimaize.langdetect.text.CommonTextObjectFactories;
-import com.optimaize.langdetect.text.TextObject;
-import com.optimaize.langdetect.text.TextObjectFactory;*/
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
-import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -58,9 +48,9 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
 import static android.app.Notification.EXTRA_LARGE_ICON;
-import static uk.co.emil.borconi.carnotifier.CarNotificationSoundPlayer.PLAYBACK_START_DELAY_MS;
 
-public class CarnotificationListener extends NotificationListenerService {
+
+public class CarnotificationListener extends NotificationListenerService  {
     Context context;
     private static Set<String> set=null;
     NotificationManager mNotifyMgr;
@@ -68,13 +58,14 @@ public class CarnotificationListener extends NotificationListenerService {
     private static List setList;
     private ScheduledExecutorService pollexecutor= Executors.newScheduledThreadPool(1);
     private ScheduledFuture<?> countdown=null;
-    TextToSpeech tts;
     CarNotificationSoundPlayer soundPlayer;
-    PlayBackQue playbackQue=new PlayBackQue(this);
+    PlayBackQue playbackQue;
     private String mPreviousNotificationKey="";
     private boolean playSound,dismissOriginal,shouldRead;
     private int clearTimeout;
-    static HashMap<String,Long> pastNot=new HashMap<>();
+    static HashMap<String,Long> pastNot=null;
+    private Car car;
+
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -86,7 +77,7 @@ public class CarnotificationListener extends NotificationListenerService {
 
         super.onCreate();
         context = getApplicationContext();
-        playbackQue.appContext=context;
+
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         if (prefs.getStringSet("List", null)!=null)
             set = prefs.getStringSet("List", null);
@@ -99,12 +90,12 @@ public class CarnotificationListener extends NotificationListenerService {
         setList = Arrays.asList(set.toArray(new String[0]));
         mNotifyMgr = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         packageManager= getApplicationContext().getPackageManager();
-        soundPlayer = new CarNotificationSoundPlayer(context,playbackQue);
         IntentFilter filter = new IntentFilter ();
         filter.addAction ("android.app.action.ENTER_CAR_MODE");
         filter.addAction ("android.app.action.EXIT_CAR_MODE");
         filter.addAction ("android.intent.action.NEW_OUTGOING_CALL");
-        registerReceiver(playbackQue,filter);
+        filter.addAction ("android.intent.action.PHONE_STATE");
+        registerReceiver(new carEventListener(),filter);
 
 
     }
@@ -137,8 +128,13 @@ public class CarnotificationListener extends NotificationListenerService {
     @Override
     public void onNotificationPosted(final StatusBarNotification sbn) {
 
+        if (((UiModeManager) getSystemService(Context.UI_MODE_SERVICE)).getCurrentModeType() != Configuration.UI_MODE_TYPE_CAR)
+            return;
 
-        if (pastNot.containsKey(sbn.getKey()+sbn.getNotification().when))
+        if (pastNot==null) {         //Ups we are in car mode but the
+            carConnect();
+        }
+        if (pastNot!=null && pastNot.containsKey(sbn.getKey()+sbn.getNotification().when))
             return;
 
         else
@@ -154,9 +150,6 @@ public class CarnotificationListener extends NotificationListenerService {
 
         final Bundle bundle = sbn.getNotification().extras;
 
-        if (((UiModeManager) getSystemService(Context.UI_MODE_SERVICE)).getCurrentModeType() != Configuration.UI_MODE_TYPE_CAR)
-            return;
-
         if (set == null)
             return;
 
@@ -165,7 +158,7 @@ public class CarnotificationListener extends NotificationListenerService {
 
 
         new Thread(new Runnable() {
-            public static final String KEY_TEXT_REPLY = "key_text_reply";
+
 
             @Override
             public void run() {
@@ -191,8 +184,7 @@ public class CarnotificationListener extends NotificationListenerService {
 
         //PendingIntent pendingIntent = PendingIntent.getActivity(this, 1, intent, PendingIntent.FLAG_ONE_SHOT);
         //load all languages:
-                if (playSound)
-                    soundPlayer.play(R.raw.note);
+
 
                 if (shouldRead) {
                     Log.d("CarNotif","Should proceed with TTS readout");
@@ -228,17 +220,25 @@ public class CarnotificationListener extends NotificationListenerService {
                     } catch (IOException e) {
                         e.printStackTrace();
                         Log.e("Notifier", "Error detecting language.");*/
-                        String detected = Locale.getDefault().getLanguage();
+                       /* String detected = Locale.getDefault().getLanguage();
                         try {
-                            detected = Translator.googleTranslateApi(text.substring(0, Math.min(text.length(), 100)), "auto", "en");
+                            detected = new Translator().bingTranslate(text.substring(0, Math.min(text.length(), 100)));
+                            Log.d("carNotiff","Detected language: " + detected);
                         } catch (Exception e1) {
+                            Log.e("carNottif","Problem detecting language: " + e1.getMessage());
                         } finally {
+                            if (playSound)
+                                soundPlayer.play(R.raw.note);
                             playbackQue.add(text, detected, xxx);
                         }
                     /*} catch (InterruptedException e) {
                         e.printStackTrace();
                     }*/
+                    new Translator().bingTranslate(CarnotificationListener.this,text,xxx);
                 }
+                else
+                if (playSound)
+                    soundPlayer.play(R.raw.note);
 
 
 
@@ -286,4 +286,113 @@ public class CarnotificationListener extends NotificationListenerService {
         }).start();
 
     }
+
+
+    public void onResponse(String detected,String text,Action xxx) {
+        if (playSound && soundPlayer!=null)
+            soundPlayer.play(R.raw.note);
+        if (playbackQue!=null)
+            playbackQue.add(text, detected, xxx);
+    }
+
+
+    public class carEventListener extends BroadcastReceiver {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+            if (intent.getAction()!=null && intent.getAction().equalsIgnoreCase("android.app.action.ENTER_CAR_MODE"))
+                carConnect();
+            else if (intent.getAction().equalsIgnoreCase("android.app.action.EXIT_CAR_MODE"))
+            {
+                Log.d("CarNotif","Exit car mode");
+                if (car!=null){
+                car.disconnect();
+                car=null;
+                }
+
+
+                soundPlayer=null;
+                pastNot.clear();
+                pastNot=null;
+                if (playbackQue!=null) {
+                    playbackQue.tts.stop();
+                    playbackQue.tts.shutdown();
+                    playbackQue.tts = null;
+                    playbackQue.messages.clear();
+                    playbackQue = null;
+                }
+            }
+            else if (intent.getAction().equalsIgnoreCase("android.intent.action.NEW_OUTGOING_CALL"))
+            {
+                if (playbackQue!=null)
+                    playbackQue.onCall();
+            }
+            else if(intent.getAction().equals("android.intent.action.ACTION_PHONE_STATE_CHANGED") || intent.getAction().equals("android.intent.action.PHONE_STATE")){
+
+                String state = intent.getStringExtra(TelephonyManager.EXTRA_STATE);
+
+                if(state.equals(TelephonyManager.EXTRA_STATE_OFFHOOK)){
+                    if (playbackQue!=null)
+                        playbackQue.onCall();
+                }
+
+                else if (state.equals(TelephonyManager.EXTRA_STATE_RINGING)){
+                    if (playbackQue!=null)
+                        playbackQue.onCall();
+                }
+                else if(state.equals(TelephonyManager.EXTRA_STATE_IDLE)){
+                    if (playbackQue!=null && playbackQue.tts!=null)
+                    {
+                        Log.d("TEST","Off call");
+                        playbackQue.phoneInUse=false;
+                        playbackQue.playQuedMessages();
+                    }
+                }
+            }
+        }
+    }
+
+    private void carConnect() {
+        playbackQue=new PlayBackQue(CarnotificationListener.this);
+        Log.d("CarNotif","Enterng car mode");
+        soundPlayer=new CarNotificationSoundPlayer(context.getApplicationContext(),playbackQue);
+        playbackQue.isPlaying=false;
+        pastNot=new HashMap<>();
+        car = Car.createCar(getApplicationContext(), carReady);
+        car.connect();
+    }
+    private CarConnectionCallback carReady = new CarConnectionCallback() {
+
+        @Override
+        public void onConnected(Car car) {
+            while (soundPlayer==null) {
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            soundPlayer.isCarReady=true;
+            try {
+                Log.d("carNotif","Car Connected");
+                //  CarFirstPartyManager mgr = (CarFirstPartyManager) car.getCarManager(CarFirstPartyManager.SERVICE_NAME);
+                //mgr.
+                soundPlayer.carAudioManager = car.getCarManager(CarAudioManager.class);
+                soundPlayer.audioAttributes = soundPlayer.carAudioManager.getAudioAttributesForCarUsage(CarAudioManager.CAR_AUDIO_USAGE_NOTIFICATION);
+                soundPlayer.playBackQue.audioAttributes=soundPlayer.audioAttributes;
+                soundPlayer.playBackQue.carAudioManager=soundPlayer.carAudioManager;
+                //  playbackQue=new PlayBackQue(carAudioManager,audioAttributes);
+            } catch (CarNotConnectedException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        @Override
+        public void onDisconnected(Car car) {
+            Log.d("carNotif","Car Disconnected");
+            if (soundPlayer!=null)
+                soundPlayer.isCarReady=false;
+        }
+    };
 }

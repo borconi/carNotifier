@@ -1,53 +1,90 @@
 package uk.co.emil.borconi.carnotifier;
 
-import android.util.Log;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.StatusLine;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
+import java.io.BufferedReader;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.net.URL;
 import java.net.URLEncoder;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+
+import javax.net.ssl.HttpsURLConnection;
 
 class Translator {
-    public static String googleTranslateApi(String text, String from, String to) {
-        String returnString = "";
+    public Translator() {
+    }
 
-        try {
-            String textEncoded= URLEncoder.encode(text, "utf-8");
-            String url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl="+from+"&tl="+to+"&dt=t&q=" + textEncoded;
-            HttpClient httpclient = new DefaultHttpClient();
-            HttpResponse response = httpclient.execute(new HttpGet(url));
-            StatusLine statusLine = response.getStatusLine();
-            if(statusLine.getStatusCode() == HttpStatus.SC_OK){
-                ByteArrayOutputStream out = new ByteArrayOutputStream();
-                response.getEntity().writeTo(out);
-                String responseString = out.toString();
-                out.close();
+    public String bingTranslate(String text) throws IOException {
 
-                String aJsonString = responseString;
-                Log.d("GoogleLanguage",responseString);
-                //aJsonString = aJsonString.replace("[", "");
-                //aJsonString = aJsonString.replace("]", "");
-                aJsonString = aJsonString.substring(aJsonString.indexOf("]")+3).replace("\"","").split(",")[1];
-                Log.d("GoogleLanguage",aJsonString);
-               /* Log.d("GoogleLanguage",aJsonString);
-                int plusIndex = aJsonString.indexOf('"');
-                aJsonString = aJsonString.substring(0, plusIndex);*/
+       String response;
+        String textEncoded= URLEncoder.encode(text, "utf-8");
 
-                returnString = aJsonString;
-            } else{
-                response.getEntity().getContent().close();
-                throw new IOException(statusLine.getReasonPhrase());
+        String url = "https://www.bing.com/tdetect";
+        URL obj = new URL(url);
+        HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
+
+        con.setRequestMethod("POST");
+        //con.setRequestProperty("User-Agent", USER_AGENT);
+        con.setRequestProperty("Accept-Language", "UTF-8");
+
+        con.setDoOutput(true);
+        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(con.getOutputStream());
+        outputStreamWriter.write("text="+textEncoded);
+        outputStreamWriter.flush();
+
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+        response=in.readLine();
+        in.close();
+        con.disconnect();
+
+        return response;
+
+    }
+
+    public void bingTranslate(final CarnotificationListener notifier, final String text, final Action xxx) {
+        RequestQueue queue = Volley.newRequestQueue(notifier);
+        String url ="https://www.bing.com/tdetect";
+
+// Request a string response from the provided URL.
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        // Display the first 500 characters of the response string.
+                        notifier.onResponse(response,text,xxx);
+                    }
+                },
+                new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    notifier.onResponse(Locale.getDefault().getLanguage(),text,xxx);
+                }
+                })
+        {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                Map<String, String>  params = new HashMap<String, String>();
+                try {
+                    params.put("text", URLEncoder.encode(text.substring(0, Math.min(text.length(), 100)), "utf-8"));
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
+                return params;
             }
-        } catch(Exception e) {
-            returnString = e.getMessage();
-        }
-
-        return returnString;
+        };
+        queue.add(stringRequest);
     }
 }
